@@ -1,0 +1,48 @@
+.body{
+    margin: 0;
+}
+.main{
+background-color white-space: ;
+
+}
+.container{
+width: 1200px;
+background-color: burlywood;
+border:solid brown;
+margin: 0 auto;
+}
+.row{ margin: 10px;
+
+}
+.column{
+background-color: chocolate;
+border: 1px solid black;
+/*border-top-color: blueviolet;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: blueviolet;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: blueviolet;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: blueviolet;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial; */
+width: 300px;
+height: 450px;
+display: inline-block;
+/* esas meqsedi yan-yana etmek rowlari */
+margin: 0px 10px 0px 0px; 
+/* bu kodu yazmaqda meqsed biz ayri-ayriliqda istediyimiz mesafeni vere bilerik 
+/*margin-top: 10px; ancaq yuxarida mesafe vermek ucun
+    margin-right: 10px; ancaq sola mesafe vermek ucun
+    margin-bottom: 10px; ancaq asagi mesafe vermek ucun
+    margin-left: 10px ancaq saga  mesafe vermek ucun */
+
+}

@@ -1,0 +1,16 @@
+.box{
+    border: 1px solid rebeccapurple;
+}
+.containerbox {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    height: 1000px;
+    /* fr-fragment */
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    /* 1+2+1+1 */
+    /* 1fr =280px */
+    gap: 10px;
+}
+

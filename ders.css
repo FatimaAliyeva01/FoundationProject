@@ -1,0 +1,26 @@
+.parent{
+    width: 600px;
+    height: 500px;
+    background-color: darkgray;
+    position: absolute;
+    margin: 50px 0px 0px 100px;
+}
+.child01,
+.child02{
+    width: 400px;
+    height: 200px ;
+background-color: darkred;
+position: relative;
+top: 40px;
+left: 50 px;
+z-index: 6;
+}
+.child01{
+    width: 400px;
+    height: 200px ;
+background-color: blue;
+position: relative;
+top: 40px;
+left: 50 px;
+z-index: 5;
+}

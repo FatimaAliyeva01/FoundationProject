@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+}
+.news-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.news-item {
+    border: 1px solid grey;
+    height: 400px;
+    position: relative;
+}
+.date {
+    width: 50px;
+    height: 90px;
+    background-color: indigo;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
