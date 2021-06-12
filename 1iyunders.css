@@ -1,0 +1,16 @@
+.box {
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 30px 0px 30px 30px;
+
+}
+
+.mainBox {
+    border: 1px solid red;
+    width: 955px;
+    margin: 0 auto;
+    font-size: 0;
+    
+}
