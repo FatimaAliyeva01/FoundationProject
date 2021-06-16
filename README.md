@@ -1,8 +1,8 @@
 
 # Fatima Aliyeva
  ## Haqqımda qısa məlumat
- #Tədrisə başladığım tarix : 21 May 2021
- #Tədrisi başa vurduğum tarix :
+ Tədrisə başladığım tarix : 21 May 2021
+ Tədrisi başa vurduğum tarix :
  #Tədris müddətində hədəflədiyim layihə şablon(ları) :Portfolia web site
 
 
