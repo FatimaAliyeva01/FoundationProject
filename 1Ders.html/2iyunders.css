@@ -1,0 +1,15 @@
+
+.box {
+    width: 238px;
+    height: 300px;
+    margin: 50px 0 50px 50px;
+    display: inline-block;
+    background-color: sienna;
+}
+.mainBox {
+    border: 1px solid gray;
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    font-size: 0;
+}
