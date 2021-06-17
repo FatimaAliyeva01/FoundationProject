@@ -86,52 +86,24 @@ body{
     }
     .home .home-content .text-1{
         font-size: 27px;
+        margin-left: 190px;
     }
     .home .home-content .text-2{
         font-size: 75px;
         font-weight: 600;
-        margin-left: -3px;
+        margin-left: 190px;
     }
     .home .home-content .text-3
     {
         font-size: 40px;
-        margin: 5px  0;
+        margin-left: 190px;
     }
 
     .home .home-content .text-3 span{
 color: crimson;
 font-weight: 500;
     }
-    @media (max-width:1104px){
-        .home .max-width{
-            margin-left: 0px;
-        }
-    }
-    @media (max-width:947px){
-    }
-    .max-width{
-        padding: 0 50px;
-    }
-    @media (max-width:947px){
-        .navbar .menu{
-            position: fixed;
-            height: 100vh;
-            width: 100%;
-            left: 0;
-            top: 0;
-            background-color:red;
-            text-align: center;
-            padding-top: 80px;
-        }
-        .navbar .menu li{
-            display: block;
-        }
-        .navbar .menu .li a{
-            display: inline-block;
-            margin: 20px 0;
-            font-size: 25px;
-        }
-    }
     
+
     
 
