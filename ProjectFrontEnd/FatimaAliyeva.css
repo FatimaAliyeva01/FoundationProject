@@ -42,10 +42,20 @@ body{
 }
 .navbar .logo a span{
     color: crimson;
+    transition: all 0.3s ease;
 
+
+}
+.navbar .sticky .logo a span{
+    color: #fff;
+    
 }
 .navbar .sticky .menu li a:hover{
    color: #fff;
+}
+.navbar .sticky {
+    padding: 30px 0;
+    background: crimson;
 }
 /* menubtn styling*/
 .menu-btn{
@@ -63,14 +73,16 @@ body{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin: 0px 0px 0px 25px;
     transition:  color 0.3s ease;
 }
 
 .navbar .menu li a:hover{
     color: crimson;
 }
-
+.navbar .sticky .menu li a:hover {
+    color: #fff;
+}
     /* home section styling*/
     .home {
         display: flex;
@@ -88,17 +100,17 @@ body{
     }
     .home .home-content .text-1{
         font-size: 27px;
-        margin-left: 190px;
+        margin: 5px 0px;
     }
     .home .home-content .text-2{
         font-size: 75px;
         font-weight: 600;
-        margin-left: 190px;
+        margin:0px 0px 0px -3px;
     }
     .home .home-content .text-3
     {
         font-size: 40px;
-        margin-left: 190px;
+        margin: 5px 0px;
     }
 
     .home .home-content .text-3 span{
@@ -112,16 +124,20 @@ font-weight: 500;
     color: #fff;
     font-size:  25px;
     padding: 12px 36px;
-    margin-top: 20px;
+    margin: 20px 0px 0px;
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all;
-    margin-left: 190px;
 }
-.home .home-content a:hover {
 
+.home .home-content a:hover 
+{
 color: #fff;
 background: none;
 }
-    
-
+a{
+    color: #DC144C;
+    padding: 13px 22px;
+    font-family: sans-serif;
+    border:1 px solid crimson;
+}
