@@ -7,7 +7,7 @@ console.log(firstElement); // first elemnt result:1
 let eightElement = arr[arr.length-1]; // eight element find
 console.log(eightElement); // eight element result ['false','exit']
 arr.push('London'); //Add new element 'London' to the ennd    
-console.log(arr); // Result  [1, 5, 9, "New York", true, "javascript", 7, Array(2), "false", "exit", "London"] - sualim var niye Arrayda elave edildi?
+console.log(arr); // Result  [1, 5, 9, "New York", true, "javascript", 7, Array(2), "false", "exit", "London"] 
 arr.pop();
 console.log(arr); // [1, 5, 9, "New York", true, "javascript", 7, Array(2), "false", "exit"] 
 
