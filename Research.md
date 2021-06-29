@@ -242,3 +242,15 @@ https://blog.devmountain.com/what-are-data-types-javascript-101/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
 5) JavaScript Arithmetic Operators
 https://www.w3schools.com/js/js_arithmetic.asp
+## Week 05 Day 04
+## promt, confirm, alert 
+Qarşılıqlı əlaqə: həyəcan qutusu, istifadəçini istəmə, təsdiqləmə
+Bu bölmə ətraf mühitdən, yəni brauzerdən və ya serverdən asılı olduğu üçün JavaScript-i əhatə edir.
+
+Ancaq hazırda təlimlər brauzerdə aparılır. Buna görə ən azı istifadəçi interfeysinin funksiyasını bilmək faydalıdır. Bu bölmədə aler, , prompt, confirmfunksiyaları ki browser iş olacaq araşdırılacaq.
+Alert
+alert(mesaj);
+Bu, ekranda 'mesaj' dəyişənini çıxaracaq və koddakı növbəti addım bu açılır pəncərədə "Tamam" düyməsinə basılmadan keçməyəcəkdir.
+
+Misal üçün:
+alert("Salam");
