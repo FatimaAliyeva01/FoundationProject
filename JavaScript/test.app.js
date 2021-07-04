@@ -1,19 +1,86 @@
-// Ekranda görünən kiçik pəncərəyə modal pəncərə deyilir. 
-//“Modal” o deməkdir ki, səhifədən istifadə edən şəxs bu halda səhifə ilə əlaqə qura bilməz.
-// digər düymələrə basa bilməz və yalnız bu pəncərə ilə qarşılıqlı əlaqə qura bilər. Başqa sözlə, “OK” düyməsinə basılması gözlənilir.
-//alert("Salam");
-//let age = prompt('Kaç yaşındasın?', 100);
+// Calculator
 
-//alert(`Sen ${age} yaşındasın!`); // Sen 100 yaşındasın!
-// Ancaq bu parametri göndərməsək, Internet Explorer "undefined"onu məlumat giriş ekranında göstərəcəkdir.İstəsəniz, aşağıdakı kodu Internet Explorer-da işə sala və görə bilərsiniz:
-//let test = prompt("Test");
-//let test = prompt("Test", ''); // <-- for IE
-// let patron = confirm("Are you student");
+function sum( x,y){
+x=10;
+y=5;
+    console.log(x+y);
+};
 
-// alert( student); // eğer OK'e basıldıysa `true` döner.
-let cars =[{ type:"BMW", model:"500",price:4000},{ type:"Ferrari", model:"400",price:3000},{ type:"Lada", model:"100",price:1000},{ type:"Kio", model:"120",price:21000} ] ;
-for (i=0; i<cars.length; i++){
-    if(cars[i].model == "400") {
-console.log(cars[i])
-    }
+function çıxma(x,y) {
+x=10;
+y=5;
+    console.log(x-y);
 }
+
+function  bolme(x,y){
+x=10;
+y=5;
+    console.log(x/y);
+};
+
+function vurma(x,y) {
+x=10;
+y=5;
+    console.log(x*y);
+}
+
+function quvvetUstu (x,y) {
+x=10;
+y=5;
+    console.log(x**y);
+}
+ vurma();
+ mynumber= 36
+
+ alert ("6 *6 = "+ mynumber );
+ 
+
+ //document.write("Hello World");
+  //let a = "Hello Fatima";
+  //console.log(a);
+  //typeof a
+  //console.log(a);
+
+  // &&
+  let x = 5;
+  let y = 9;
+ let a = x < 10 && y < 11;
+console.log(a);
+  // ||
+  let s = 5;
+  let f = 9;
+ let b = s < 10 || f < 1;
+ console.log(b);
+// ==
+let bb = 5;
+let ba = 5;
+let c = bb =! ba;
+let d = typeof ba;
+console.log(d);
+
+
+let arr = [25,5,10,30,90]
+let max = 0
+for (let i=0;i<arr.length;i++) {
+    if (arr[i] > max ) {
+        max = arr[i]
+    }
+};
+    console.log(max)
+
+
+
+
+
+    let str = "    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sequi repellat ab blanditiis magnam, iusto unde voluptatum illo quam dicta soluta dolorem culpa. Sint beatae aspernatur eveniet sed voluptate qui."
+   
+    count =0;
+
+    function find(a){
+        for(let i=0; i<str.length; i++){
+            if (str[i]==a){
+                count+=1
+            } 
+        };
+
+
