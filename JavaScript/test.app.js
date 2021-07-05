@@ -74,13 +74,12 @@ for (let i=0;i<arr.length;i++) {
 
     let str = "    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sequi repellat ab blanditiis magnam, iusto unde voluptatum illo quam dicta soluta dolorem culpa. Sint beatae aspernatur eveniet sed voluptate qui."
    
-    count =0;
+    count =0
 
-    function find(a){
-        for(let i=0; i<str.length; i++){
-            if (str[i]==a){
-                count+=1
-            } 
-        };
+function find(a){
+    for(let i=0; i<str.length; i++){
+        if (str[i]==a){
+            count+=1
+        }
 
 
