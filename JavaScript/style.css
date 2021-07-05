@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+  
+
+.miniBlock{
+    height: 100px;
+    width: 100px;
+    border: solid 1px black;
+    padding: 0px;
+    margin: 0px;
+};
