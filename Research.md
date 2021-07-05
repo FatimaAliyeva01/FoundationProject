@@ -243,14 +243,188 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Op
 5) JavaScript Arithmetic Operators
 https://www.w3schools.com/js/js_arithmetic.asp
 ## Week 05 Day 04
+
+How Many Different Types of Loop Methods Are There and Basic Concepts
+You can use the following loop methods in JS. But why there are so many different loop methods, I will explain it below.
+for
+while
+do/while
+forEach
+for…in
+for…of
+recursion
+Continue/Break commands are a way of managing the loop extra. For example, you have logical operations, but you do not want the code to run for the relevant part of the loop. If you want it to skip c ontinue. If you say that you have finished your operations in the part of the loop and you do not need to work for the others, you can make your loop work more efficiently by using the break command.
+Recursive: Loops are created with self-invoking functions and the loop is terminated in a certain situation. Your code will throw a stackoverflow errorif my function is not stopped at some point calling itself.
+Iterator: These are structures that allow navigating the Collection etc data structures in languages ​​such as Java, C++. In Collection data structures derived from the Iterable interface, the iterator is the pointer that holds which node it is on. Similar structures exist in JS.
+2. For, While, Do/While Loops
+In procedural programming, they are looping methods that we consistently use in Basic, Pascal, C, and Java. These loops are used for very general purposes. Thanks to the flexibility provided, you can create the type of loop you want very simply.
+Features of the for loop;
+You set the condition from the beginning. This loop may never start (i<5)
+You set the variable that determines the condition in the loop. (I)
+In the for loop, you specify the initial value of the variable and how it will increase. (i++) so it is said to increase by 1 each time.
+The form of the for loop is specific from the start.
+The continue/break commands work.
+for(let i=0;i<5;i++) console.log(i);
+Features of while loop;
+You specify the condition from the beginning again (i<5)
+Determine the initial value of the loop variable in Meza . (i=1)
+The increase of the variable can be increased or decreased within the scope of the loop and can be changed as desired.
+It provides a more flexible loop structure than for.
+The continue/break commands work.
+let i=1; while(i<5) {console.log(i); i++};
+Features of the Do/While loop
+The condition checks the probe this time (i<5)
+It always does the first action.
+Other parts are the same as the while loop .
+The continue/break commands work.
+let i=1; do{ console.log(i); i++} while(i<5) ;
+3. forEach and Other Preset Functions
+It has a function that can pass over all elements such as forEach in Array, Map and Set data structures. The disadvantage of this is that there is no possibility to continue/break .
+const numberArray=[1,2,2,4,5];
+const colorSet=new Set(["red","green","blue"]);
+const colorMap=new Map([['red',1],['green',2]])
+numberArray.forEach(el=>console.log(el))
+colorSet.forEach(el=>console.log(el))
+colorMap.forEach((value,key, map)=>{console.log(`${key}:${value}`)})
+I would like to talk about other functions like forEach using Array, which is realized with the High Order Functions method with Functional Programming. → map, filter, find, findIndex, reduce, every, some, etc functions are ready-made functions provided to developers combined with loops for a specific purpose.
+forEach: return all array elements
+filter: return all array elements and filter by condition
+map: map all array elements as another array.
+find: Find the element you are interested in in the array.
+reduce array is to create a single output.
+every whether all given elements pass the test
+some is whether some of the given elements pass the test.
+In the future, when I explain functional programming, I will dwell on these issues in more detail.
+4. Why Was For…of Needed? Other Cycles Not Enough?
+In fact, you can provide any kind of loop you want with the loop types we mentioned above. Why did forEach, for…of, for…in etc loops appear?
+There are different data structures in applications. These are String, Array, LinkList, Set, Map, Trie Tree, Graph etc. When you want to navigate these data structures, we need easier methods than the loops mentioned above. These types of structures increase both our code writing and the readability of the code.
+In the following data structures
+Arrays
+Strings
+Maps
+Sets
+DOM data structures
+Symbols
+I have made a few examples of this below. A very important point here is that you can use continue/break commands in for…of.
+const arr=[1,2,2,4,5];
+const str='12245'
+const set=new Set([1,1,2,4])
+const map=new Map([['a',1],['b',2],['c',3]]);
+for(let val of arr) console.log(val);
+for(let val of str) console.log(val);
+for(let val of set) console.log(val);
+for(let val of map) console.log(val);
+Here , I would like to briefly talk about the for…in loop. For example, you have an object and you want to return property of it, you can use for…in for this.
+const me={name:"Onur", age:39, height:180};
+for(let key in me) console.log(key+":"+me[key]);
+There are other methods of accessing the object's property key or entry. In the Object.keys() and Object.entries() methods, you can create loops over the results returned as an array.
+const me={name:"Onur", age:39, height:180};
+for(let key of Object.keys(me)) console.log(key)
+for(let keyVal of Object.entries(me)) console.log(keyVal)
+5. Recursive Functions
+These self-invoking functions are a very common technique, especially in functional programming. Calling the function itself allows the code to be written in a more readable and shorter way, but as I mentioned above, it is necessary to pay attention to the stack-overflow issue.
+If we look at the example below, the Fibonacci numbers are the sum of the previous Fibonacci number and itself. F(n)=F(n-1) + F(n-2)
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+If we write this in a recursive way, we will have an image that is closer to the mathematical description.
+Fibonacci = const (num) => { 
+   if (num <= 1) return 1; 
+   return Fibonacci (whether - 1) + Fibonacci (whether - 2); 
+} 
+Console.log (Fibonacci (5));
+
+
+
+
 ## promt, confirm, alert 
 Qarşılıqlı əlaqə: həyəcan qutusu, istifadəçini istəmə, təsdiqləmə
 Bu bölmə ətraf mühitdən, yəni brauzerdən və ya serverdən asılı olduğu üçün JavaScript-i əhatə edir.
 
 Ancaq hazırda təlimlər brauzerdə aparılır. Buna görə ən azı istifadəçi interfeysinin funksiyasını bilmək faydalıdır. Bu bölmədə aler, , prompt, confirmfunksiyaları ki browser iş olacaq araşdırılacaq.
-Alert
+### Alert
 alert(mesaj);
 Bu, ekranda 'mesaj' dəyişənini çıxaracaq və koddakı növbəti addım bu açılır pəncərədə "Tamam" düyməsinə basılmadan keçməyəcəkdir.
 
 Misal üçün:
 alert("Salam");
+ Ekranda görünən kiçik pəncərəyə modal pəncərə deyilir. “Modal” o deməkdir ki, səhifədən istifadə edən şəxs bu halda səhifə ilə əlaqə qura bilməz, digər düymələrə basa bilməz və yalnız bu pəncərə ilə qarşılıqlı əlaqə qura bilər. Başqa sözlə, “OK” düyməsinə basılması gözlənilir.
+### Prompt
+ İstifadəçidən məlumat istənir
+promptFunksiya istifadəçidən məlumat tələb etmək üçün istifadə olunur . Bu funksiyanın iki arqumentə ehtiyacı var:
+result = prompt(başlık[, varsayılan]);
+Modal pəncərədə bir mətn və OK / Ləğv düymələri var.
+
+başlık
+Mətn istifadəçiyə göstəriləcək.
+default
+İsteğe bağlı ikinci parametr giriş sahəsi üçün standart dəyəri ehtiva edir.
+İstifadəçi istədiklərini ekranda görünən məlumat giriş qutusuna yazır və OK düyməsini basır. Və ya Ləğv etmə düyməsini basaraq ləğv edə bilərsiniz. Or Escdüyməsi də eyni şeyi edir.
+
+İstifadəçi bir dəyər daxil etmişsə, onu geri qaytarır, əks halda həmin ekrandan Escvə ya Ləğv et düyməsindən çıxır null.
+
+Misal üçün: 
+let age = prompt('Kaç yaşındasın?', 100);
+
+alert(`Sen ${age} yaşındasın!`); // Sen 100 yaşındasın!
+
+həmişə varsayılandəyər istifadə edin
+İkinci parametr isteğe bağlıdır. Ancaq bu parametri göndərməsək, Internet Explorer "undefined"onu məlumat giriş ekranında göstərəcəkdir.
+
+İstəsəniz, aşağıdakı kodu Internet Explorer-da işə sala və görə bilərsiniz:
+
+let test = prompt("Test");
+Buna görə də, boş olmasına baxmayaraq həmişə ona bir dəyər təyin etmək vacibdir ki, bu da IE-də düzgün görünsün. Yeri gəlmişkən, bu problem Edge brauzerində görünmür.
+
+let test = prompt("Test", ''); // <-- for IE
+
+### Confirm
+Təsdiq
+Orfoqrafiya:
+
+result = confirm(soru);
+confirmYazdığımız funksiya soruOK və Ləğv düymələri olan bir pəncərə yaradır.
+
+OK düyməsinə basılmışsa true, CANCEL falsedüyməsinə basılmışsa qayıdır .
+
+Misal üçün:
+
+let patron = confirm("Patron musun?");
+
+alert( patron ); // eğer OK'e basıldıysa `true` döner.
+Xülasə
+Bu bölmədə istifadəçi ilə qarşılıqlı əlaqəni təmin edən 3 brauzer əsaslı funksiyadan istifadə olunur.
+
+alert
+Ekranda bir mesaj göstərir.
+prompt
+İstifadəçiyə mesajla bir sual verir. Bir məlumat giriş qutusu ilə bir cavab alır. İstifadəçi mətn yazır və OKdüyməni basarsa, yazılmış dəyər qaytarılır. Və CANCELya Escdüyməsini basarsa, nulldəyər brauzerə qaytarılır.
+confirm
+İstifadəçini “OK” və ya “Ləğv et” düyməsini basmağı tələb edir. İstifadəçi “OK” düyməsinə basarsa true, LƏĞV və ya Eschalda false qaytarır.
+Bütün bu metodlar modadır. Yəni bu kod işlədikdə, istifadəçi bu pəncərələr bağlanana qədər səhifənin digər hissələri ilə qarşılıqlı əlaqə qura bilməz.
+
+Yuxarıda göstərilən metodların iki məhdudiyyəti var.
+
+Bu açılan modalın yeri ümumiyyətlə səhifənin ortasındadır.
+Həm də brauzerdən brauzerə dəyişən ekranın tərzi. Bunu dəyişdirə bilməzsiniz.
+Bu, hər şeyi sadələşdirməyə bərabərdir. Əlbətdə ki, daha gözəl ekranları müxtəlif yollarla göstərmək mümkündür, ancaq görüntünün o qədər də vacib olmadığını, funksionallığın vacib olduğunu söyləyirsinizsə, onda bu metodlardan istifadə edə bilərsiniz.
+
+
+
+
+### JavaScript internalHTML nədir?
+JavaScript innerHTML xassəsi bir veb səhifədəki elementin HTML məzmununu təyin edir. InnerHTML HTML DOM-un bir xüsusiyyətidir. innerHTML tez-tez <p> elementinin məzmununun təyin edilməsi və dəyişdirilməsi üçün istifadə olunur.
+
+İnnerHTML\InnerText
+
+- innerText
+- innerHtml
+- label
+- text
+- textContent
+- outerText
+
+- innerText dəyəri olduğu kimi göstərir və daxil ola biləcək hər hansı bir HTML işarəsini görməzdən gəlir
+- innerHTML dəyəri göstərir və istənilən HTML formatını tətbiq edir
+- labelilə eyni görünür innerText, buna görə fərqi görə bilmirəm
+- textinnerTextJQuery qısaldılmış versiyası ilə eyni görünür
+- textContenteyni görünür, innerTextamma formatlaşdırmanı saxlayır (məsələn \n)
+- outerText kimi eyni görünür innerText
