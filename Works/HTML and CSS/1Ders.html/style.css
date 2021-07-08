@@ -1,8 +1,8 @@
-.body{
+/*.body{
     margin: 0;
 }
 .main{
-background-color white-space: ;
+background-color: crimson ;
 
 }
 .container{
@@ -34,15 +34,102 @@ border: 1px solid black;
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial; */
-width: 300px;
+/*width: 300px;
 height: 450px;
-display: inline-block;
-/* esas meqsedi yan-yana etmek rowlari */
-margin: 0px 10px 0px 0px; 
+display: inline-block; esas meqsedi yan-yana etmek rowlari */
+/*margin: 0px 10px 0px 0px; 
 /* bu kodu yazmaqda meqsed biz ayri-ayriliqda istediyimiz mesafeni vere bilerik 
 /*margin-top: 10px; ancaq yuxarida mesafe vermek ucun
     margin-right: 10px; ancaq sola mesafe vermek ucun
     margin-bottom: 10px; ancaq asagi mesafe vermek ucun
     margin-left: 10px ancaq saga  mesafe vermek ucun */
+h1{
+    color: darkgreen;
+    color: crimson;
+    
+font-size: 30px;
+text-align:center;
+margin-left: -3px;
 
+border: 5px solid greenyellow;
+
+}
+h2 {
+color: crimson;
+font-size: 30px;
+text-align:center;
+margin-left: -3px;
+border: 5px solid greenyellow;
+
+}
+
+img{
+width: 100%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+ }
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.bg {
+    /* The image used */
+    background-image: url("azerbaijan-country-detailed-editable-map-vector-35718547.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  form {
+    display: block;
+    margin-top: 0em;
+}
+button {
+    appearance: auto;
+
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
 }
