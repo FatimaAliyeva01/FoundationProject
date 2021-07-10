@@ -124,7 +124,7 @@ section .title::after{
 }
 /* menu btn styling */
 .menu-btn{
-    color: #fff;
+    color:#fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -445,6 +445,32 @@ section .title::after{
         margin-bottom: 35px;
     }
 }
+
+/* teams section styling */
+.teams .title::after{
+    content: "who with me";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -492,4 +518,5 @@ section .title::after{
         line-height: 38px;
     }
 }
-Last, create a JavaScript file with the name of script.js and paste the given codes in your JavaScript file. Remember, 
+
+
