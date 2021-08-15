@@ -165,16 +165,14 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
-
 /* home section styling */
 .home{
     display: flex;
-    background: url("Pictures/Shekil2.jpg") no-repeat center;
+    background: url("Pictures/1629048937365.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: black;
     min-height: 500px;
-    background-size: cover;
+    background-size:cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -263,7 +261,9 @@ section .title::after{
 }
 
 /* services section styling */
+
 .services, .teams{
+    
     color:#fff;
     background: #111;
 }
@@ -307,6 +307,7 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 
 /* skills section styling */
 
@@ -373,14 +374,17 @@ section .title::after{
 .skills-content .right .css::before{
     width: 60%;
 }
-.skills-content .right .js::before{
-    width: 80%;
+.skills-content .right .j::before{
+    width: 60%;
 }
-.skills-content .right .php::before{
+.skills-content .right .js::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .python::before{
     width: 70%;
+}
+.skills-content .right .power::before{
+    width: 80%;
 }
 
 /* teams section styling */
